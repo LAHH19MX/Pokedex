@@ -148,7 +148,7 @@ pokemon-app/
 │   │   ├── PokemonDetail.ts  
 │   │   └── Pokemon.ts        
 │   │
-│   ├── hooks/                # 2 custom hooks (CORRECTOS)
+│   ├── hooks/                
 │   │   ├── usePokemonList.ts
 │   │   └── usePokemonDetail.ts
 │   │
