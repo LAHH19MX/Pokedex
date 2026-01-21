@@ -311,73 +311,7 @@ Found 8 errors.
 npm run lint
 ```
 
-**Corregir automáticamente:**
-```bash
-npm run lint:fix
-```
 
-**Ejemplo de corrección automática:**
-- ✅ Elimina imports no usados
-- ✅ Convierte `var` → `const`
-- ✅ Elimina variables no usadas
-- ✅ Elimina/comenta `console.log`
-
----
-
-### Prettier
-
-**Verificar formato:**
-```bash
-npm run format:check
-```
-
-**Formatear todos los archivos:**
-```bash
-npm run format
-```
-
-**Ejemplo de corrección:**
-```typescript
-// ANTES
-import{POKEMON_COLORS}from'./constants';
-
-// DESPUÉS (Prettier)
-import { POKEMON_COLORS } from './constants';
-```
-
----
-
-## 🔄 Flujo de Corrección
-
-### Paso 1: Formatear código (Prettier)
-```bash
-npm run format
-```
-**Resultado:** 4/4 errores de formato corregidos ✅
-
-### Paso 2: Corregir código (ESLint)
-```bash
-npm run lint:fix
-```
-**Resultado:** 12/14 errores de código corregidos ✅
-
-### Paso 3: Verificar tipos (TypeScript)
-```bash
-npm run type-check
-```
-**Resultado:** Muestra 8 errores que requieren corrección manual ⚠️
-
-### Paso 4: Corrección manual
-Editar archivos para corregir:
-- Añadir tipos explícitos
-- Usar optional chaining (`?.`)
-- Corregir tipos de datos
-- Cambiar nombres a PascalCase
-
-### Paso 5: Verificación final
-```bash
-npm run type-check && npm run lint && npm run format:check
-```
 ---
 
 ## 📝 Comandos Disponibles
@@ -385,13 +319,9 @@ npm run type-check && npm run lint && npm run format:check
 | Comando | Descripción |
 |---------|-------------|
 | `npm run dev` | Inicia servidor de desarrollo |
-| `npm run build` | Compila para producción |
-| `npm run preview` | Preview de build de producción |
 | `npm run type-check` | Verifica tipos con TypeScript |
 | `npm run lint` | Analiza código con ESLint |
 | `npm run lint:fix` | Corrige errores de ESLint automáticamente |
-| `npm run format` | Formatea código con Prettier |
-| `npm run format:check` | Verifica formato sin modificar |
 
 ---
 
