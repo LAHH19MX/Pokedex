@@ -98,7 +98,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
           e.currentTarget.style.boxShadow = '0 4px 6px rgba(238, 21, 21, 0.3)';
         }}
       >
-        🔍 Buscar
+        Buscar
       </button>
     </form>
   );
