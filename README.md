@@ -12,16 +12,13 @@
 
 ## 📋 Tabla de Contenidos
 
-- [Descripción del Proyecto](#-descripción-del-proyecto)
-- [Objetivos](#-objetivos)
-- [Tecnologías y Herramientas](#-tecnologías-y-herramientas)
+- [Descripción del Proyecto](#descripción-del-proyecto)
+- [Objetivos](#objetivos)
+- [Tecnologías y Herramientas](#tecnologías-y-herramientas)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Errores Intencionales](#-errores-intencionales)
 - [Google TypeScript Style Guide](#-google-typescript-style-guide)
 - [Instalación](#-instalación)
 - [Uso de Herramientas](#-uso-de-herramientas)
-- [Flujo de Corrección](#-flujo-de-corrección)
-- [Resultados](#-resultados)
 - [Comandos Disponibles](#-comandos-disponibles)
 
 ---
@@ -77,8 +74,6 @@ Demostrar el uso práctico de herramientas de análisis estático para mantener 
 - Valida uso de `any` implícito
 - Identifica accesos inseguros a propiedades
 
-**Errores detectados:** 8 (100% requieren corrección manual)
-
 ---
 
 #### 2️⃣ ESLint
@@ -90,19 +85,6 @@ Demostrar el uso práctico de herramientas de análisis estático para mantener 
 - Identifica código no usado
 - Aplica reglas de Google TypeScript Style Guide
 
-**Errores detectados:** 14 (86% auto-corregibles)
-
-**Reglas principales:**
-```javascript
-{
-  '@typescript-eslint/no-explicit-any': 'error',
-  '@typescript-eslint/no-unused-vars': 'error',
-  'no-var': 'error',
-  'prefer-const': 'error',
-  'no-console': 'warn'
-}
-```
-
 ---
 
 #### 3️⃣ Prettier
@@ -112,18 +94,6 @@ Demostrar el uso práctico de herramientas de análisis estático para mantener 
 - Formatea **código automáticamente**
 - Estandariza indentación, espacios, comillas
 - Asegura consistencia visual
-
-**Errores detectados:** 4 (100% auto-corregibles)
-
-**Configuración:**
-```json
-{
-  "semi": true,
-  "singleQuote": true,
-  "tabWidth": 2,
-  "printWidth": 100
-}
-```
 
 ---
 
